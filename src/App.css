@@ -1,38 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.411) 50%,
+      rgba(0, 0, 0, 0.411) 50%
+    ),
+    url("./assets/airport.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.road {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20vh;
+  width: 100%;
+  background-color: #1f1d1d;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.roadLine {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border-top: 10px dashed #fff;
+  z-index: 0;
+  align-self: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plane {
+  position: absolute;
+  bottom: 50px;
+  left: -400px;
+  width: 400px;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.plane2 {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  -webkit-user-drag: none;
+  top: 10px;
+  left: -200px;
+}
+.plane3 {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  -webkit-user-drag: none;
+  top: 70px;
+  right: -200px;
+  transform: rotateY(180deg);
 }
