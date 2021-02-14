@@ -1,0 +1,98 @@
+{
+  "mango-image": {
+    "name": "Mango",
+    "img": "https://i.ibb.co/6BQs83r/mango.png",
+    "param": "mango-image",
+    "opacity": 1,
+    "color": "#fcad3d",
+    "hoverColor": "#ed9312"
+  },
+  "pear-image": {
+    "name": "Pear",
+    "img": "https://i.ibb.co/S6GprDN/pear.png",
+    "param": "pear-image",
+    "opacity": 1,
+    "color": "#b2c82f",
+    "hoverColor": "#86971d"
+  },
+  "apple-image": {
+    "name": "Apple",
+    "img": "https://i.ibb.co/nCMx5Sm/apple.png",
+    "param": "apple-image",
+    "opacity": 1,
+    "color": "#d23a0f",
+    "hoverColor": "#9d2908"
+  },
+  "watermelon-image": {
+    "name": "Water-melon",
+    "img": "https://i.ibb.co/sHmNK64/watermelon.png",
+    "param": "watermelon-image",
+    "opacity": 1,
+    "color": "#608a1d",
+    "hoverColor": "#456612"
+  },
+  "orange-image": {
+    "name": "Orange",
+    "img": "https://i.ibb.co/Zx29tLZ/orange.png",
+    "param": "orange-image",
+    "opacity": 1,
+    "color": "#f88a05",
+    "hoverColor": "#b46505"
+  },
+  "peach-image": {
+    "name": "Peach",
+    "img": "https://i.ibb.co/1LwPwW4/peach.png",
+    "param": "peach-image",
+    "opacity": 1,
+    "color": "#d16e46",
+    "hoverColor": "#a15333"
+  },
+  "guava-image": {
+    "name": "Guava",
+    "img": "https://i.ibb.co/PghQnb4/guava.png",
+    "param": "guava-image",
+    "opacity": 1,
+    "color": "#9cae06",
+    "hoverColor": "#849306"
+  },
+  "papaya-image": {
+    "name": "Papaya",
+    "img": "https://i.ibb.co/pfk9Whz/papaya.png",
+    "param": "papaya-image",
+    "opacity": 1,
+    "color": "#fbac42",
+    "hoverColor": "#d18d31"
+  },
+  "pomegranate-image": {
+    "name": "Pomegranate",
+    "img": "https://i.ibb.co/yk8BRQM/pomegranate.png",
+    "param": "pomegranate-image",
+    "opacity": 1,
+    "color": "#de414c",
+    "hoverColor": "#a82f37"
+  },
+  "melon-image": {
+    "name": "Melon",
+    "img": "https://i.ibb.co/g4Nh8gm/melon.png",
+    "param": "melon-image",
+    "opacity": 1,
+    "color": "#eaba5b",
+    "hoverColor": "#c79e4e"
+  },
+  "banana-image": {
+    "name": "Banana",
+    "img": "https://i.ibb.co/GnhdJBq/banana.png",
+    "param": "banana-image",
+    "opacity": 1,
+    "color": "#fed74a",
+    "hoverColor": "#e1be3e"
+  },
+  "apricot-image": {
+    "name": "Apricot",
+    "img": "https://i.ibb.co/RNVHsrz/apricot.png",
+    "param": "apricot-image",
+    "opacity": 1,
+    "color": "#f78549",
+    "hoverColor": "#c97042"
+  }
+}

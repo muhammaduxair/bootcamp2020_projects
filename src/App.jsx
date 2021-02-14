@@ -1,8 +1,17 @@
+import Home from "./components/Home";
+import Page from "./components/Page";
+import "./app.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { useState } from "react";
+
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/:fruit" component={Page} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 

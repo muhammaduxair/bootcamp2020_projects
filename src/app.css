@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainBox {
+  padding: 20px;
+  /*  */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.gridBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gridHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-bottom: 25px; */
+  /*  */
+  padding: 5px 0;
+}
+.gridHeader > h1 {
+  color: #dc0827;
+  /* font-size: 60px; */
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  /*  */
+  font-size: 100px;
+}
+.gridHeader > h3 {
+  color: #7e7979;
+  /* font-size: 30px; */
+  text-transform: capitalize;
+  /*  */
+  font-size: 50px;
+}
+.gridBody {
+  /* width: auto; */
+  display: flex;
+  align-items: baseline;
+  /*  */
+  width: 100%;
+  overflow-x: scroll;
+}
+.gridBody::-webkit-scrollbar {
+  width: 0;
+}
+.fruitGridBox {
+  display: flex;
+  justify-content: center;
+  /* padding: 0 10px 5px 10px; */
+  /*  */
+  padding: 5px 10px;
+}
+.fruitLogo {
+  width: 100%;
+  height: fit-content;
+  -webkit-user-drag: none;
+  opacity: 0.3;
+}
+.fruitLogo:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.opacity0 {
+  opacity: 0.3 !important;
+}
+
+@media (max-width: 570px) {
+  .gridHeader > h1 {
+    font-size: 50px;
+  }
+  .gridHeader > h3 {
+    font-size: 25px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.Header > h1 {
+  color: #dc0827;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 70px;
+}
+.Header > h3 {
+  color: #7e7979;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.Body {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.Body::-webkit-scrollbar {
+  width: 0;
+}
+.Body .FruitBox {
+  height: 65%;
+  width: auto;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+.FruitBox img {
+  height: 100%;
+  width: auto;
+  -webkit-user-drag: none;
+}
+.height100 {
+  height: 80% !important;
+}
+
+/*  */
+/*  */
+.pageBox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.pageBox > .left {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageBox > .left img {
+  width: 400px;
+  height: auto;
+  -webkit-user-drag: none;
+}
+.pageBox > .right {
+  width: 50%;
+  padding: 40px 20px 20px 0;
+}
+.pageBox > .right h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.pageBox > .right p {
+  font-size: 20px;
+  color: rgb(46, 44, 44);
+  text-transform: capitalize;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.pageBox > .right button {
+  padding: 7px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: #fff;
+}
+.pageBox > .right button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 570px) {
+  .Header > h1 {
+    font-size: 50px;
+  }
+  .Header > h3 {
+    font-size: 25px;
+  }
+  .Body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+  }
+  .Body .FruitBox {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .height100 {
+    height: 35% !important;
+  }
+}
+@media (max-width: 944px) {
+  .pageBox > .left img {
+    width: 350px;
+  }
+}
+@media (max-width: 800px) {
+  .pageBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .pageBox > .left {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    height: auto;
+  }
+  .pageBox > .left img {
+    width: 270px;
+    height: auto;
+  }
+  .pageBox > .right {
+    width: 100%;
+    padding: 30px 10px 20px 10px;
+  }
+  .pageBox > .right h1 {
+    font-size: 50px;
+  }
+  .pageBox > .right p {
+    font-size: 18px;
+  }
+  .pageBox > .right button {
+    font-size: 18px;
+  }
+}
