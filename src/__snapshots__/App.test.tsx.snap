@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the component 1`] = `
+<div
+  className="mainBox"
+>
+  <div
+    className="timerBox"
+  >
+    <h2
+      className="timerScreen"
+    />
+  </div>
+</div>
+`;
