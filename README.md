@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## App Hosted Link (Progressive Web App)
+## App Hosted Link
 
 Open Link [http://timerapp-muzair.surge.sh/](http://timerapp-muzair.surge.sh/) to view App;
 
