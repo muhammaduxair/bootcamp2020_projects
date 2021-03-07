@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Do+Hyeon&family=Lobster&display=swap");
+/* 
+font-family: 'Bitter', serif;
+font-family: 'Lobster', cursive; 
+font-family: 'Do Hyeon', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.main_box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #02648b;
+}
+.main_box .tracker_box {
+  width: 350px;
+  height: 95%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.tracker_box .header {
+  width: 100%;
+  padding: 1rem 0;
+  background: #00364b;
+  display: flex;
+  justify-content: center;
+}
+.header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Do Hyeon", sans-serif;
+  letter-spacing: 0.3rem;
+}
+.tracker_box .screen {
+  width: 100%;
+  margin: 1.5rem 0 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.screen h2 {
+  font-size: 1.6rem;
+  font-family: "Bitter", serif;
+}
+.screen h1 {
+  font-size: 2.5rem;
+  font-family: "Bitter", serif;
+}
+.tracker_box .detail_screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  background: #aaa6a641;
+}
+.detail_screen .income,
+.detail_screen .expense {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail_screen .income h2,
+.detail_screen .expense h2 {
+  font-size: 1.6rem;
+  font-family: "Bitter", serif;
+  letter-spacing: 0.2rem;
+}
+.detail_screen .income h1 {
+  color: #1a8122;
+  font-family: "Bitter", serif;
+  font-size: 2rem;
+  padding-top: 0.3rem;
+}
+.detail_screen .expense h1 {
+  color: #9b150c;
+  font-family: "Bitter", serif;
+  font-size: 2rem;
+  padding-top: 0.2rem;
+}
+.tracker_box .History {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 1.2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 28%;
+  overflow: hidden auto;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(0, 0, 0, 0.356);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  font-family: "Bitter", serif;
+  background: rgba(0, 0, 0, 0.644);
+  border-radius: 1rem;
+}
+.History h1 {
+  font-size: 2.5rem;
+  font-family: "Do Hyeon", sans-serif;
+  letter-spacing: 0.3rem;
+}
+.History hr {
+  background: #aaa6a641;
+}
+.History .history_box {
+  width: 100%;
+  padding: 1rem 0 0 0;
+}
+.history_box ul {
+  list-style: none;
+}
+.history_box ul li {
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #aaa6a641;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  font-family: "Bitter", serif;
+  font-weight: 600;
+}
+.history_box ul li .txt {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+/* .history_box ul li .txt:hover{
+
+} */
+.br-green {
+  border-right: 3px solid green;
+}
+.br-red {
+  border-right: 3px solid red;
+}
+.history_box ul li .del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100%;
+  width: 10%;
+  cursor: pointer;
+  padding: 4px;
+}
+.bg-green {
+  background: green;
+}
+.bg-red {
+  background: red;
+}
+.tracker_box .Add_trans {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.Add_trans h1 {
+  font-size: 2.5rem;
+  font-family: "Do Hyeon", sans-serif;
+  letter-spacing: 0.2rem;
+}
+.Add_trans hr {
+  background: #aaa6a641;
+}
+.Add_trans h3 {
+  padding: 1.3rem 0 0 0;
+  font-size: 1.6rem;
+  font-family: "Bitter", serif;
+  margin: 0;
+}
+.Add_trans h3 > span {
+  font-size: 1.2rem;
+}
+.Add_trans h2 {
+  padding: 1.3rem 0 0.5rem 0;
+  font-size: 1.6rem;
+  font-family: "Bitter", serif;
+  margin: 0;
+}
+.Add_trans span {
+  font-size: 1.2rem;
+  font-family: "Bitter", serif;
+  margin: 0 0 0.3rem 0;
+  font-weight: bold;
+  padding: 0 0 0.5rem 0;
+}
+.Add_trans input {
+  margin-bottom: 0.3rem;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid #00364b;
+  font-family: "Bitter", serif;
+}
+.tracker_box .bttn {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 10px;
+}
+.bttn button {
+  width: 100%;
+  height: 100%;
+  font-size: 2.5rem;
+  font-family: "Do Hyeon", sans-serif;
+  background: #d15d0f;
+  color: #fff;
+  outline: none;
+  border: 0;
+  padding: 0.5rem 0;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bttn button:hover {
+  background: #94420c;
+}
+
+@media (max-width: 400px) {
+  .main_box .tracker_box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
