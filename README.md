@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## App Hosted Link (Progressive Web App)
+
+Open Link [https://spacex-muzair.netlify.app/](https://spacex-muzair.netlify.app/) to view App;
+
 ## Available Scripts
 
 In the project directory, you can run:

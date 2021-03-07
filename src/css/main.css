@@ -1,0 +1,494 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: auto;
+  overflow: hidden auto;
+}
+.MAIN_CONTAINER {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: transparent;
+}
+.MAIN_CONTAINER::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/space3.jpg");
+  background-position: center;
+  background-size: auto 120%;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+.MAIN_CONTAINER .HEADER {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+.HEADER > img {
+  width: 100px;
+}
+.HEADER > div {
+  display: flex;
+  /* padding-top: 20px; */
+}
+.HEADER > div > button {
+  height: fit-content;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(
+    -45deg,
+    #2195f3ad,
+    #ff00ea9b,
+    #f32172a1,
+    #ffea07a6
+  );
+}
+.HEADER > div > button:hover {
+  color: #fff;
+}
+.HEADER > div > button:focus {
+  color: #fff;
+}
+.HEADER > div > button:nth-child(2) {
+  margin-left: 10px;
+}
+.MAIN_CONTAINER .CONTENT_AREA {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.MAIN_CONTAINER .CONTENT_AREA h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 10px;
+  background: linear-gradient(-45deg, #2196f3, #ff00eb, #f32170, #ffeb07);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.MAIN_CONTAINER .CONTENT_AREA h1 > span {
+  font-size: 100px;
+}
+.MAIN_CONTAINER .CONTENT_AREA p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.MAIN_CONTAINER .CONTENT_AREA > span {
+  padding: 10px 0;
+}
+.MAIN_CONTAINER .CONTENT_AREA > span > button {
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 6px 25px;
+}
+.MAIN_CONTAINER .CONTENT_AREA > span > button:nth-child(1) {
+  margin-right: 20px;
+}
+
+/* ============================ */
+/* MISSION SCREEN */
+/* ============================ */
+.MAIN_MISSION_CONATINER {
+  padding: 40px !important;
+}
+.FISRT_ROW > div {
+  padding-bottom: 20px;
+}
+.FISRT_ROW > div > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 45px;
+  background: linear-gradient(-45deg, #2196f3, #ff00eb, #f32170, #ffeb07);
+  width: fit-content;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.SECOND_ROW {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(0, 0, 0, 0.2);
+}
+.SECOND_ROW > div:nth-child(1) {
+  padding: 20px;
+}
+.SECOND_ROW > div:nth-child(2) {
+  padding: 20px;
+  background: #12151b;
+}
+.SECOND_ROW > div:nth-child(1) > p {
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-bottom: 2px solid #12151b;
+  margin: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+.FOCUS_CLR {
+  background: linear-gradient(-45deg, #ff00eb, #2196f3);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.MISSION_DATA_MISSION {
+  display: flex;
+  flex-direction: column;
+}
+.MISSION_DATA_MISSION > span {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.MISSION_DATA_MISSION > span > h1 {
+  color: #fff;
+  font-size: 50px;
+  background: linear-gradient(-45deg, #ff00eb, #2196f3);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.MISSION_DATA_MISSION > span > h2 {
+  color: #2196f3;
+  font-size: 36px;
+  margin-left: 20px;
+}
+.MISSION_DATA_MISSION > p {
+  color: rgb(200, 192, 192);
+  font-size: 20px;
+  line-height: 35px;
+}
+.MISSION_DATA_MISSION > div {
+  display: flex;
+  padding: 10px 0;
+}
+.MISSION_DATA_MISSION > div > .BTTN {
+  font-size: 18px;
+  border-radius: 50px;
+  color: #2196f3;
+  border: 3px solid #2196f3;
+  text-transform: capitalize;
+  padding: 3px 15px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* ================= */
+/* rocket page */
+/* ================= */
+.RocketROW {
+  padding: 10px 20px;
+}
+.RocketHeader {
+  padding-top: 30px;
+}
+.RocketHeader > h1 {
+  color: #fff;
+  background: linear-gradient(-45deg, #2196f3, #ff00eb, #f32170, #ffeb07);
+  width: fit-content;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.RocketList > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #12151b;
+  padding: 20px;
+  height: 100%;
+}
+.RocketList {
+  margin-bottom: 10px;
+}
+.RocketList > div > span > h1 {
+  color: #fff;
+  background: linear-gradient(-45deg, #ff00eb, #2196f3);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+.RocketList > div > span > p {
+  color: #ffffffb0;
+  font-size: 18px;
+  text-align: justify;
+}
+.RocketList > div > a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 5px 15px;
+  border: 2px solid #ffeb07;
+  color: #ffeb07;
+  width: fit-content;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+}
+.RocketList > div > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #252b36;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  transition: all 0.3s ease;
+}
+.RocketList > div > a:hover::before {
+  transform: rotate(0deg);
+  content: "Wikipedia";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====================== */
+/* Launches Page */
+/* ====================== */
+.LaunchesROW {
+  padding: 10px 20px;
+}
+.LaunchesList {
+  padding: 20px;
+}
+.LaunchesList > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2), -3px -3px 20px rgba(0, 0, 0, 0.2);
+}
+.LaunchesList > div > span > img {
+  width: 100%;
+  height: 300px;
+  opacity: 0.7;
+}
+
+.LaunchesList > div > span > h1 {
+  color: #fff;
+  background: linear-gradient(-45deg, #2196f3, #ff00eb, #f32170, #ffeb07);
+  width: fit-content;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 45px;
+  padding: 30px 0 0 20px;
+  margin-bottom: 10px;
+}
+.LaunchesList > div > span > span {
+  display: flex;
+  padding: 10px 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.LaunchesList > div > span > h1 {
+  color: #474345fd;
+  font-size: 28px;
+  margin: 0;
+}
+.LaunchesList > div > span > p {
+  color: rgba(255, 255, 255, 0.452);
+  font-size: 20px;
+  padding: 10px 20px;
+  text-align: justify;
+  margin: 0;
+}
+.LaunchesList > div > div {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 20px 0;
+}
+.LaunchesList > div > div > button {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+.LaunchesList > div > div > span > a {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #2196f3;
+  text-decoration: none;
+  border-bottom: 2px solid #2196f3;
+  padding: 5px;
+}
+/* =========================== */
+/* footer page */
+/* =========================== */
+.FOOTER {
+  background: #202630;
+}
+.FOOTER > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.FOOTER > div > div:nth-child(1) {
+  padding: 10px;
+}
+.FOOTER > div > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+}
+.FOOTER > div > div:nth-child(1) > p {
+  color: rgb(202, 198, 198);
+  margin: 0;
+}
+.FOOTER > div > div:nth-child(2) > a {
+  height: fit-content;
+}
+.FOOTER > div > div:nth-child(2) > a > img {
+  width: 35px;
+  margin-right: 20px;
+}
+.FOOTER > div > div:nth-child(2) > a > img:nth-child(3) {
+  margin-right: 0;
+}
+
+/* offline */
+.OFFLINE_BOX {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.OFFLINE_BOX h1 {
+  color: #ffffffb0;
+  font-size: 30px;
+}
+.OFFLINE_BOX p {
+  color: #ffffffb0;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .MAIN_CONTAINER .HEADER {
+    padding: 10px;
+    align-items: center;
+  }
+  .HEADER > img {
+    width: 80px;
+  }
+  .HEADER > div > button {
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .SECOND_ROW > div:nth-child(1) {
+    padding: 10px 15px;
+  }
+  .SECOND_ROW > div:nth-child(2) {
+    padding: 10px;
+  }
+  .MAIN_CONTAINER .CONTENT_AREA {
+    padding: 20px 20px 0 20px;
+  }
+  .MAIN_CONTAINER .CONTENT_AREA > h1 {
+    font-size: 60px;
+  }
+  .MAIN_CONTAINER .CONTENT_AREA > h1 > span {
+    font-size: 80px;
+  }
+  .MAIN_CONTAINER .CONTENT_AREA p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: justify;
+    width: fit-content;
+    padding: 0 10px;
+  }
+  /* ====================  */
+  /* mission screen */
+  /* ====================  */
+  .FISRT_ROW > div > h2 {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .MAIN_MISSION_CONATINER {
+    padding: 40px 10px !important;
+  }
+
+  .MISSION_DATA_MISSION > span {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .MISSION_DATA_MISSION > span > h1 {
+    font-size: 38px;
+  }
+  .MISSION_DATA_MISSION > span > h2 {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .MISSION_DATA_MISSION > p {
+    color: rgb(200, 192, 192);
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .MISSION_DATA_MISSION > div {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .MISSION_DATA_MISSION > div > .BTTN {
+    font-size: 14px;
+    border-radius: 0;
+    /* color: #2196f3; */
+    border: none;
+    border-bottom: 3px solid #2196f3;
+    /* text-transform: capitalize; */
+    padding: 3px 10px;
+    /* font-weight: bold; */
+    margin-right: 0;
+  }
+
+  /* ================= */
+  /* rocket page */
+  /* ================= */
+  .RocketROW {
+    padding: 5px;
+  }
+  .RocketHeader {
+    padding-top: 20px;
+  }
+
+  /* ============== */
+  /* launches page  */
+  /* ============== */
+  .LaunchesROW {
+    padding: 10px;
+  }
+  .LaunchesList > div > div > span > a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .LaunchesList > div > div > span > a:nth-child(2) {
+    margin-right: 0;
+  }
+  .LaunchesList > div > div > button {
+    font-size: 14px;
+  }
+}
