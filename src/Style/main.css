@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.NAVBAR {
+  background: #fff;
+  padding: 0 !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#MATERIAL_BUTTON {
+  color: #e93b3b;
+  border: 2px solid #e93b3b;
+  outline: none;
+  background: transparent;
+  border-radius: 20px;
+  margin: auto 10px;
+}
+
+.NAVBAR_BRAND {
+  color: #e93b3b !important;
+  font-size: 40px !important;
+  font-family: "Righteous", cursive !important;
+}
+
+.MainScreen {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+
+.MainScreen .row .leftCorner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.MainScreen .row .leftCorner h1 {
+  font-family: "Righteous", cursive;
+  font-size: 100px;
+  color: #e93b3b;
+}
+
+.MainScreen .row .leftCorner h1 img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  -webkit-animation: rotation 20s linear infinite;
+          animation: rotation 20s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.MainScreen .row .leftCorner h3 {
+  color: #e93b3b;
+  font-size: 25px;
+}
+
+.MainScreen .row .rightCorner h1 {
+  font-family: "Righteous", cursive;
+  font-size: 35px;
+  color: #e93b3b;
+}
+
+.MainScreen .row .rightCorner p {
+  text-align: justify;
+  color: #6e6c6c;
+}
+
+.MainScreen .row .rightCorner p span {
+  font-size: 25px;
+  color: #e93b3b;
+}
+
+.CountingScreen {
+  width: 100%;
+  height: auto;
+}
+
+.CountingScreen .HEADER {
+  position: relative;
+}
+
+.CountingScreen .HEADER h1 {
+  text-align: center;
+  font-family: "Righteous", cursive;
+  font-size: 50px;
+  color: #fff;
+  padding: 10px 0;
+  background: #e93b3b;
+  border-radius: 50px;
+}
+
+.CountingScreen .HEADER .threeDots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  top: 0;
+  right: 0;
+  height: 90%;
+}
+
+.CountingScreen .HEADER .threeDots .moreVert {
+  color: #fff;
+  font-size: 50px !important;
+  cursor: pointer;
+  outline: none;
+}
+
+.CountingScreen .renderBoxes {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 10px rgba(255, 59, 59, 0.5);
+          box-shadow: 0 0 10px rgba(255, 59, 59, 0.5);
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.CountingScreen .renderBoxes h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 65px;
+  margin: 0;
+}
+
+.CountingScreen .renderBoxes p {
+  font-family: "Righteous", cursive;
+  font-size: 36px;
+  color: #6e6c6c;
+  margin: 0;
+}
+
+.renderBoxes4,
+.renderBoxes5 {
+  border: 5px solid #0ca00c;
+}
+
+.renderBoxes4 h1,
+.renderBoxes5 h1 {
+  color: #0ca00c;
+}
+
+.renderBoxes2,
+.renderBoxes3 {
+  border: 5px solid #9fb100;
+}
+
+.renderBoxes2 h1,
+.renderBoxes3 h1 {
+  color: #9fb100;
+}
+
+.renderBoxes0,
+.renderBoxes1 {
+  border: 5px solid #be0b0b;
+}
+
+.renderBoxes0 h1,
+.renderBoxes1 h1 {
+  color: #be0b0b;
+}
+
+.Graph {
+  width: 100%;
+  height: auto;
+  padding: 30px 20px;
+}
+
+.Graph .indexHead h1 {
+  text-align: center;
+  font-family: "Righteous", cursive;
+  font-size: 50px;
+  color: #fff;
+  padding: 10px 0;
+  background: #e93b3b;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.Footer {
+  width: 100%;
+  height: auto;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+}
+
+.Footer .info h2 {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.Footer .Social_ICons {
+  width: auto;
+  height: 100%;
+}
+
+.Footer .Social_ICons .ICO {
+  margin: 0 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Footer .Social_ICons .ICO1 {
+  font-size: 30px;
+}
+
+.Footer .Social_ICons .ICO1 :hover {
+  color: #3b5998;
+}
+
+.Footer .Social_ICons .ICO2 {
+  font-size: 25px;
+}
+
+/*  */
+/*  */
+/*  */
+@media (max-width: 1020px) {
+  .leftCorner h1 {
+    font-size: 90px !important;
+  }
+  .leftCorner img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .HEADER h1,
+  .indexHead h1 {
+    font-size: 40px !important;
+  }
+  .HEADER .moreVert,
+  .indexHead .moreVert {
+    font-size: 40px !important;
+  }
+  .renderBoxes h1 {
+    font-size: 55px !important;
+  }
+  .renderBoxes p {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav > li {
+    margin: 0.25rem 0;
+  }
+  .renderBoxes h1 {
+    font-size: 45px !important;
+  }
+  .renderBoxes p {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .leftCorner {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .renderBoxes h1 {
+    font-size: 50px !important;
+  }
+  .renderBoxes p {
+    font-size: 25px !important;
+  }
+  .HEADER h1,
+  .indexHead h1 {
+    font-size: 30px !important;
+  }
+  .HEADER .threeDots,
+  .indexHead .threeDots {
+    width: 60px !important;
+  }
+  .HEADER .threeDots .moreVert,
+  .indexHead .threeDots .moreVert {
+    font-size: 30px !important;
+  }
+  .Footer {
+    padding: 10px 20px;
+  }
+  .Footer .info h2 {
+    font-size: 16px;
+  }
+  .Footer .Social_ICons .ICO {
+    margin: 0 7px;
+  }
+  .Footer .Social_ICons .ICO1 {
+    font-size: 26px;
+  }
+  .Footer .Social_ICons .ICO2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 476px) {
+  .leftCorner h1 {
+    font-size: 55px !important;
+  }
+  .leftCorner img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .rightCorner {
+    padding-top: 20px;
+  }
+  .rightCorner h1 {
+    font-size: 25px !important;
+  }
+  .rightCorner p span {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+  .Graph {
+    padding: 20px 10px !important;
+  }
+  .HEADER h1,
+  .indexHead h1 {
+    font-size: 24px !important;
+  }
+  .HEADER .threeDots,
+  .indexHead .threeDots {
+    width: 52px !important;
+  }
+  .Footer {
+    padding: 10px 20px;
+  }
+  .Footer .info h2 {
+    font-size: 14px;
+    letter-spacing: 0 !important;
+  }
+  .Footer .Social_ICons .ICO {
+    margin: 0 5px;
+  }
+  .Footer .Social_ICons .ICO1 {
+    font-size: 22px;
+  }
+  .Footer .Social_ICons .ICO2 {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
