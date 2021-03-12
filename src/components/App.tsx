@@ -1,25 +1,30 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Checkout from "./Checkout";
-import Home from "./Home";
-import "./main.css";
-import Shirts from "./shirst.json";
-import { useDispatch } from "react-redux";
+import "../css/main.css";
+import "../css/bootstrap.min.css";
+import Header from "./Header";
+import Body from "./Body";
+import { useSelector, useDispatch } from "react-redux";
+import { actionType, dataInter } from "../interfaces/interface";
 import { useEffect } from "react";
-import { ActionsType } from "./dataTypes";
 
 const App = () => {
+  const STATE = useSelector((state: dataInter[]) => state);
   const Dispatch = useDispatch();
+
   useEffect(() => {
-    Dispatch<ActionsType>({ type: "add_shirts", payload: Shirts });
+    const Data = localStorage.getItem("DATA");
+    if (Data) {
+      Dispatch<actionType>({ type: "ADD_LOCAL", payload: JSON.parse(Data) });
+    }
   }, []);
+  useEffect(() => {
+    localStorage.setItem("DATA", JSON.stringify(STATE));
+  }, [STATE]);
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/checkout" component={Checkout} />
-      </Switch>
-    </Router>
+    <div className="container-fluid MAIN_CONTAINER">
+      <Header />
+      <Body />
+    </div>
   );
 };
 export default App;

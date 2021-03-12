@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000ec;
+  background: transparent;
+}
+.MAIN_CONTAINER {
+  display: flex;
+  flex-direction: column;
+}
+.MAIN_CONTAINER .HEADER_BOX {
+  background-color: #f50635;
+  padding: 0;
+  display: flex;
+}
+.HEADER_BOX > .LEFT {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.HEADER_BOX > .LEFT > h1 {
+  color: #fff;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.HEADER_BOX > .LEFT > p {
+  color: #fff;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 40px;
+  font-weight: bold;
+}
+.HEADER_BOX > .RIGHT {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px 0 25px;
+}
+.HEADER_BOX > .RIGHT > h1 {
+  text-align: center;
+  color: #fff;
+  background: #f50635;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.HEADER_BOX > .RIGHT > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HEADER_BOX > .RIGHT > form > div {
+  display: flex;
+  flex-direction: column;
+}
+.HEADER_BOX > .RIGHT > form > div label {
+  color: #f50635;
+  margin-bottom: 5px;
+}
+.HEADER_BOX > .RIGHT > form > div input,
+.HEADER_BOX > .RIGHT > form > div textarea {
+  border: none;
+  border: 2px solid #f50635;
+  border-radius: 0;
+  padding: 5px;
+  outline: none;
+}
+.HEADER_BOX > .RIGHT > form > div:last-child > button {
+  color: #fff;
+  border: 3px solid #f50635;
+  font-size: 18px;
+  border-radius: 50px;
+  background: #f50635;
+  padding: 5px 30px;
+  width: fit-content;
+  font-weight: bold;
+}
+.HEADER_BOX > .RIGHT > form > div:last-child > button:hover {
+  background: #ca022a;
+}
+.BODY_CONTAINER {
+  padding: 20px;
+}
+.BODY_CONTAINER > .BODY_COLUMN {
+  padding: 0;
+}
+.BODY_CONTAINER > .BODY_COLUMN .DIARY_BOX {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.BODY_COLUMN .DIARY_BOX .TITLE_BOX {
+  display: flex;
+  padding: 10px;
+  background-color: #dfd7d7ec;
+  border: 1px solid #c2bebeec;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.BODY_COLUMN .DIARY_BOX .TITLE_BOX > p {
+  margin: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.BODY_COLUMN .DIARY_BOX .MESSAGE_BOX {
+  padding: 10px;
+  background-color: #dfd7d7ec;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.BODY_COLUMN .DIARY_BOX .MESSAGE_BOX input {
+  margin: 0;
+  color: #000000ec;
+  outline: none;
+  border: none;
+}
+.BODY_COLUMN .DIARY_BOX .MESSAGE_BOX span {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.BODY_COLUMN .DIARY_BOX .MESSAGE_BOX span > button:nth-child(1) {
+  margin-right: 10px;
+}
+.BODY_COLUMN .DIARY_BOX .MESSAGE_BOX span > button {
+  padding: 3px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 933px) {
+  .HEADER_BOX > .RIGHT {
+    padding: 15px 15px 0 15px;
+  }
+  .HEADER_BOX > .LEFT > h1 {
+    font-size: 50px;
+  }
+  .HEADER_BOX > .LEFT > p {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .BODY_CONTAINER {
+    padding: 10px;
+  }
+}
+@media (max-width: 580px) {
+  .HEADER_BOX > .LEFT {
+    padding: 15px;
+  }
+  .HEADER_BOX > .LEFT > h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  .HEADER_BOX > .LEFT > p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    text-align: justify;
+  }
+}

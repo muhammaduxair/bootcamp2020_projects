@@ -1,6 +1,6 @@
 ## App Hosted Link
 
-Open Link [http://shopping-basket-muzair.surge.sh/](http://shopping-basket-muzair.surge.sh/) to view App;
+Open Link [http://diary-app-muzair.surge.sh/](http://diary-app-muzair.surge.sh/) to view App;
 
 # Getting Started with Create React App
 
