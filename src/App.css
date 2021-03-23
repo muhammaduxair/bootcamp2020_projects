@@ -1,38 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button {
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 50px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100%;
   min-height: 100vh;
+  max-height: 100%;
+  background-color: #07061f;
+  display: flex;
+  justify-content: center;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #02020a;
+}
+body::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #032b42;
+}
+.taskBoxContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  padding: 15px;
+  background: #07061f;
+}
+.taskBoxContainer > h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+  border: 5px solid #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.taskBoxContainer > input {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-bottom: 5px solid #fff;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  margin-bottom: 15px;
+}
+.taskBoxContainer > input::placeholder {
+  color: #ffffff73;
+}
+.taskBoxContainer > span {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 0;
+}
+.taskBoxContainer > span .addBtn,
+.taskBoxContainer > span .clearBtn {
+  border: 5px solid #fff;
+  font-size: 24px;
+  padding: 10px 40px;
+  margin-right: 20px;
+  transition: all 0.4s linear;
+}
+.taskBoxContainer > span .clearBtn {
+  color: #e70707;
+  border-color: #e70707;
+}
+.taskBoxContainer > span .addBtn:hover,
+.taskBoxContainer > span .clearBtn:hover {
+  color: #07061f;
+  background: #fff;
+  cursor: pointer;
+}
+.taskBoxContainer > span .clearBtn:hover {
+  background-color: #e70707;
+}
+.taskBoxContainer > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.taskBoxContainer > div > .todoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #fff;
+  height: fit-content;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.taskBoxContainer > div > .todoContainer > span {
+  display: flex;
+  align-items: center;
+}
+.taskBoxContainer > div > .todoContainer > span > p {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.taskBoxContainer > div > .todoContainer > span > p:nth-child(1) {
+  margin-right: 10px;
+  padding: 3px 10px;
+  background: #07061f;
+  color: #fff;
+  border-radius: 50px;
+}
+.taskBoxContainer > div > .todoContainer > span > img {
+  width: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+.taskBoxContainer > div > .todoContainer > span > img:nth-child(1) {
+  margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1200px) {
+  .taskBoxContainer {
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 850px) {
+  .taskBoxContainer {
+    width: 70%;
+  }
+}
+@media (max-width: 710px) {
+  .taskBoxContainer {
+    width: 80%;
+  }
+}
+@media (max-width: 570px) {
+  .taskBoxContainer {
+    width: 90%;
+  }
+  .taskBoxContainer > span .addBtn,
+  .taskBoxContainer > span .clearBtn {
+    border: 4px solid #fff;
+    font-size: 22px;
+    padding: 10px 30px;
+  }
+  .taskBoxContainer > span .clearBtn {
+    color: #e70707;
+    border-color: #e70707;
+  }
+}
+@media (max-width: 470px) {
+  .taskBoxContainer {
+    width: 100%;
+    padding: 10px;
+  }
+  .taskBoxContainer > h1 {
+    font-size: 40px;
+    border: 5px solid #fff;
+  }
+  .taskBoxContainer > span .addBtn,
+  .taskBoxContainer > span .clearBtn {
+    border: 4px solid #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  .taskBoxContainer > span .clearBtn {
+    color: #e70707;
+    border-color: #e70707;
   }
 }
