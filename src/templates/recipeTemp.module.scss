@@ -1,0 +1,100 @@
+// ==========================
+$main_nav_clr: #fff;
+$link_hover_clr: #009c34;
+$black_clr: #000000b6;
+$font_1: "Averia Serif Libre", cursive;
+$font_2: "Lobster", cursive;
+$font_3: "Permanent Marker", cursive;
+// ==========================
+
+.recipeTemp {
+  padding-top: 100px;
+
+  .firstGrid {
+    padding: 20px;
+
+    > div:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-top: 5px solid $link_hover_clr;
+      border-bottom: 5px solid $link_hover_clr;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+
+      h1 {
+        font-family: $font_1;
+        color: $link_hover_clr;
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      p {
+        color: #a7a5a5;
+        font-family: $font_1;
+        font-style: italic;
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+    }
+
+    > div:nth-child(2) {
+      img {
+        width: 100%;
+      }
+      div {
+        padding: 20px;
+
+        h3 {
+          font-family: $font_1;
+          font-weight: bold;
+          color: $link_hover_clr;
+          font-size: 36px;
+          margin-bottom: 10px;
+          text-decoration: underline;
+        }
+        ul,
+        ol {
+          margin-bottom: 30px;
+          margin-left: 20px;
+          li {
+            font-size: 14px;
+            color: $black_clr;
+            font-size: 20px;
+            margin-bottom: 5px;
+          }
+        }
+        p {
+          font-size: 14px;
+          color: $black_clr;
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .recipeTemp {
+    padding-top: 140px;
+
+    .firstGrid {
+      padding: 0;
+
+      > div:nth-child(1) {
+        padding: 0 10px;
+
+        h1 {
+          margin: 5px 0;
+          font-size: 32px;
+        }
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

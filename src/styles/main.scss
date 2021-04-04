@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap");
+// ==========================
+$main_nav_clr: #fff;
+$link_hover_clr: #009c34;
+$black_clr: #000000b6;
+$font_1: "Averia Serif Libre", cursive;
+$font_2: "Lobster", cursive;
+$font_3: "Permanent Marker", cursive;
+// ==========================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    width: 100%;
+    // box-shadow: 0 0 15px rgba($color: #000, $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
+    > section:nth-child(1) {
+      display: flex;
+      padding-left: 10px;
+
+      > a {
+        text-decoration: none;
+        h2 {
+          text-transform: uppercase;
+          font-size: 2.7rem;
+          letter-spacing: 3px;
+          font-family: $font_3;
+          color: #fff;
+          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+          cursor: pointer;
+        }
+      }
+    }
+    > section:nth-child(2) {
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        li {
+          a {
+            font-size: 1.2rem;
+            padding: 0.4rem 1.5rem;
+            font-family: $font_2;
+            transition: all 0.3s linear;
+            background-color: $main_nav_clr;
+            color: $black_clr;
+            margin-right: 0.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            border: 2px solid $black_clr;
+            &:hover {
+              background-color: $black_clr;
+              cursor: pointer;
+              color: $main_nav_clr;
+            }
+          }
+          .activeLink {
+            background-color: $black_clr;
+            cursor: pointer;
+            color: $main_nav_clr;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: auto;
+    padding: 2rem;
+    background-color: $link_hover_clr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: #fff;
+      font-family: $font_2;
+      font-size: 1.1rem;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      text-align: center;
+      a {
+        color: #000000b6;
+      }
+    }
+    span {
+      display: flex;
+      align-items: center;
+      .socialIcon {
+        color: #fff;
+        font-size: 1.6rem;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .socialIcon:nth-child(1),
+      .socialIcon:nth-child(2) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 560px) {
+  .mainContainer {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+
+      > section:nth-child(1) {
+        h2 {
+          font-size: 3.5rem !important;
+        }
+      }
+      > section:nth-child(2) {
+        ul {
+          flex-wrap: wrap;
+          justify-content: center;
+          padding-bottom: 10px;
+          li {
+            padding-top: 15px;
+            a {
+              padding: 0.5rem 1rem;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

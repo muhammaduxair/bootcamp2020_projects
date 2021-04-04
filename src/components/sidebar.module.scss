@@ -1,0 +1,119 @@
+// ==========================
+$main_nav_clr: #fff;
+$link_hover_clr: #009c34;
+$black_clr: #000000b6;
+$font_1: "Averia Serif Libre", cursive;
+$font_2: "Lobster", cursive;
+$font_3: "Permanent Marker", cursive;
+// ==========================
+
+.sideBar {
+  padding: 20px 20px 20px 30px;
+
+  > h1 {
+    font-size: 40px;
+    font-family: $font_1;
+    font-weight: bold;
+    color: $link_hover_clr;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 5px solid $link_hover_clr;
+    border-top: 5px solid $link_hover_clr;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  > div {
+    margin-bottom: 40px;
+    a {
+      text-decoration: none;
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        background-color: #ebebeb;
+        border-radius: 5px;
+        overflow: hidden;
+
+        > span:nth-child(1) {
+          width: 30%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        > span:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          width: 67%;
+          padding: 5px 10px 5px 0;
+
+          h2 {
+            font-size: 22px;
+            color: #000;
+            font-family: $font_1;
+            font-weight: bold;
+          }
+          p {
+            font-style: italic;
+            color: $black_clr;
+            font-family: $font_1;
+          }
+          > span {
+            align-self: flex-end;
+            display: flex;
+            align-items: center;
+            p {
+              color: #ff0033;
+              font-weight: bold;
+              font-size: 20px;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            .icon {
+              margin-right: 5px;
+              color: #ff0033;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  > span {
+    display: flex;
+    flex-direction: column;
+
+    > h1 {
+      color: $main_nav_clr;
+      background-color: $link_hover_clr;
+      padding: 10px;
+      width: 100%;
+      font-family: $font_1;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    div {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid $link_hover_clr;
+
+      > h1 {
+        font-family: $font_1;
+        font-size: 14px;
+        color: $black_clr;
+        background-color: #dddbdb;
+        padding: 5px 12px;
+        cursor: pointer;
+        border-radius: 20px;
+        margin: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .sideBar {
+    padding: 10px;
+  }
+}

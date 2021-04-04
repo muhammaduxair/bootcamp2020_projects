@@ -1,0 +1,81 @@
+// ==========================
+$main_nav_clr: #fff;
+$link_hover_clr: #009c34;
+$black_clr: #000000b6;
+$font_1: "Averia Serif Libre", cursive;
+$font_2: "Lobster", cursive;
+$font_3: "Permanent Marker", cursive;
+// ==========================
+
+.recipeBox {
+  padding: 30px;
+  section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    justify-content: space-between;
+    background: #b9b8b849;
+    img {
+      width: 100%;
+    }
+    > div {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+
+        h1 {
+          font-size: 40px;
+          font-family: $font_1;
+          color: #000000ce;
+          line-height: 42px;
+        }
+        h2 {
+          font-size: 16px;
+          font-style: italic;
+          color: #7a7a7a;
+          // margin-bottom: 15px;
+          margin-left: 5px;
+        }
+      }
+      p {
+        color: #000000ce;
+        font-size: 16px;
+        font-family: $font_1;
+        margin-bottom: 20px;
+      }
+      a {
+        text-decoration: none;
+        align-self: flex-end;
+        margin-right: 10px;
+        .bttn {
+          color: $main_nav_clr;
+          background: $link_hover_clr;
+          border: 2px solid $link_hover_clr;
+          font-family: $font_1;
+          padding: 5px 20px;
+          border-radius: 50px;
+          font-weight: bold;
+          &:hover {
+            background: #017227;
+            border-color: #017227;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .recipeBox {
+    padding: 20px 10px;
+  }
+}

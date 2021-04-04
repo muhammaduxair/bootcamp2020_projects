@@ -1,0 +1,152 @@
+$main_nav_clr: #fff;
+$link_hover_clr: #009c34;
+$font_3: "Permanent Marker", cursive;
+$font_2: "Lobster", cursive;
+$font_1: "Averia Serif Libre", cursive;
+$black_clr: #000000b6;
+
+.mainWrapper {
+  height: 100vh;
+
+  .left {
+    padding: 30px;
+    align-self: center;
+    h1 {
+      font-size: 50px;
+      color: $link_hover_clr;
+      letter-spacing: 2px;
+      font-family: $font_2;
+      line-height: 50px;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 40px;
+      color: $black_clr;
+      letter-spacing: 3px;
+      font-family: $font_1;
+      line-height: 35px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      color: $black_clr;
+      font-family: $font_1;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    a {
+      text-decoration: none;
+      .aboutBtn {
+        border-radius: 50px !important;
+        padding: 5px 20px !important;
+        color: $main_nav_clr !important;
+        background-color: $link_hover_clr !important;
+        font-family: $font_1 !important;
+        font-size: 20px !important;
+        font-weight: bold !important;
+      }
+      .aboutbtnArrow {
+        color: $main_nav_clr;
+        margin-left: 15px;
+        font-size: 30px !important;
+      }
+    }
+  }
+  .right {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      filter: brightness(0.5);
+    }
+  }
+}
+// =====================================
+.bottomArea {
+  padding: 50px 10px;
+
+  .first {
+    display: flex;
+    flex-wrap: wrap;
+    > h1 {
+      font-family: $font_1;
+      font-weight: bold;
+      color: #fff;
+      -webkit-text-stroke: 1px $link_hover_clr;
+      font-size: 60px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainWrapper {
+    .left {
+      padding-top: 100px;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .mainWrapper {
+    height: fit-content;
+    overflow: hidden;
+
+    .right {
+      width: 100%;
+      height: fit-content;
+
+      img {
+        width: 120%;
+        height: 300px;
+      }
+    }
+  }
+  .bottomArea {
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 560px) {
+  .mainWrapper {
+    .left {
+      padding: 150px 20px 20px 20px;
+
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+      a {
+        .aboutBtn {
+          padding: 5px 15px !important;
+          font-size: 16px !important;
+        }
+        .aboutbtnArrow {
+          margin-left: 10px;
+          font-size: 25px !important;
+        }
+      }
+    }
+  }
+  .bottomArea {
+    padding: 30px 10px;
+    .first {
+      > h1 {
+        font-size: 40px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

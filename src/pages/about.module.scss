@@ -1,0 +1,50 @@
+$main_nav_clr: #fff;
+$link_hover_clr: #009c34;
+$black_clr: #000000b6;
+$font_1: "Averia Serif Libre", cursive;
+$font_2: "Lobster", cursive;
+$font_3: "Permanent Marker", cursive;
+
+.mainAboutBox {
+  padding: 100px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 60px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px $link_hover_clr;
+    font-family: $font_3;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    color: $black_clr;
+    text-transform: capitalize;
+    font-family: $font_1;
+    margin-bottom: 20px;
+
+    &::first-letter {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .mainAboutBox {
+    padding: 140px 10px 10px 10px;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 20px;
+      text-align: justify;
+    }
+  }
+}
