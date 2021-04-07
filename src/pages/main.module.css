@@ -1,0 +1,59 @@
+.inputField {
+  width: 100%;
+  display: flex;
+}
+.input {
+  background-color: #ffffffb0;
+}
+.inputField > div:last-child {
+  padding-left: 10px;
+}
+.inputField > div > .Bttn {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.List {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.ListBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #1b2d3d;
+  border-radius: 10px;
+  border: 2px solid #0c141b;
+  margin-bottom: 10px;
+}
+.ListBox > p {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+.ListBox > div {
+  align-self: flex-end;
+  display: flex;
+}
+.ListBox > div > .upd {
+  background-color: green;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 2px 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.ListBox > div > .del {
+  background-color: red;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 2px 15px;
+  font-weight: bold;
+  border-radius: 20px;
+}
