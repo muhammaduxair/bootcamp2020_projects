@@ -1,0 +1,78 @@
+.headDIV {
+  display: flex;
+  flex-direction: column;
+}
+.headDIV > .addBtn {
+  color: #000000d2;
+  background-color: #fff;
+  border: 3px solid #000000d2;
+  height: fit-content;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: capitalize;
+  width: fit-content;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 5px 30px;
+  align-self: flex-end;
+  margin-top: 18px;
+}
+.headDIV > .addBtn:hover {
+  background-color: #000000d2;
+  color: #fff;
+}
+
+.todoBox {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+.todoBox > .todoList,
+.todoBox > .todoListFalse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #000000d2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.todoBox > .todoList > span,
+.todoBox > .todoListFalse > span {
+  display: flex;
+  align-items: center;
+}
+.todoBox > .todoList > span > img,
+.todoBox > .todoListFalse > span > img {
+  width: 30px;
+  cursor: pointer;
+}
+.todoBox > .todoList > span > p,
+.todoBox > .todoListFalse > span > p {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.todoBox > .todoList > span:last-child > img,
+.todoBox > .todoListFalse > span:last-child > img {
+  margin-left: 15px;
+}
+/* ============= */
+.todoBox > .todoListFalse {
+  background-color: #5c5858d2;
+}
+.todoBox > .todoListFalse > span > p {
+  text-decoration: line-through;
+}
+/* ================== */
+.emptyList {
+  width: 100%;
+  padding: 15px;
+  background-color: #000000d2;
+  border-radius: 10px;
+}
+.emptyList p {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}

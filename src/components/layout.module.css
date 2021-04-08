@@ -1,0 +1,26 @@
+.mainBox {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #00789c; */
+}
+.mainBox > .Header {
+  width: 100%;
+  height: fit-content;
+  background: #000000d2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.Header > h1 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  padding: 25px 10px;
+}
+.mainBox > .Body {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+}
