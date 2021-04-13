@@ -1,0 +1,10 @@
+.defaultBox {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.defaultBox > h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+}

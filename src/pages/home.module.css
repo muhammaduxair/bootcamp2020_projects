@@ -1,0 +1,33 @@
+.homeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonDIV {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.buttonDIV > a {
+  text-decoration: none;
+}
+.buttonDIV > a > .createButton {
+  border: 3px solid #fa73d9;
+  border-radius: 50px;
+  color: #fa73d9;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+.buttonDIV > a > .createButton:hover {
+  background-color: #f34cc9;
+  color: #21212b;
+}
+@media (max-width: 540px) {
+  .buttonDIV {
+    padding: 30px;
+  }
+  .buttonDIV > .createButton {
+    border: 2px solid #fa73d9;
+    padding: 10px 25px;
+  }
+}

@@ -1,0 +1,108 @@
+.lolly {
+  filter: drop-shadow(0 0 20px #000);
+}
+.createBox {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.createBox > .section1 {
+  display: flex;
+  margin-top: 50px;
+}
+.createBox > .section1 > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-left: 20px;
+}
+.createBox > .section1 > div > label {
+  overflow: hidden;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin-top: 60px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 20px #000;
+}
+.createBox > .section1 > div > label > input {
+  width: 100px;
+  height: 100px;
+  margin: -30px 0 0 -30px;
+}
+.createBox > .formBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 80px;
+}
+.createBox > .formBox > .labelDIV {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #000;
+  border-radius: 10px;
+  background-color: #15151b;
+}
+.formBox > .labelDIV > label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: #929293;
+  font-size: 16px;
+}
+.formBox > .labelDIV > label > input,
+.formBox > .labelDIV > label > textarea {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #222;
+  border: 2px solid #fa73d9;
+  margin-top: 5px;
+  outline: none;
+  color: #fff;
+}
+.formBox > .labelDIV > label > p {
+  margin-top: 7px;
+  color: #db1414;
+  font-size: 16px;
+}
+.formBox > .labelDIV > label > textarea {
+  resize: none;
+  height: 200px;
+}
+.createBox > .formBox > .buttonDIV {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.createBox > .formBox > .buttonDIV > .bttn {
+  border: 3px solid #fa73d9;
+  border-radius: 50px;
+  color: #fa73d9;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+.createBox > .formBox > .buttonDIV > .bttn:hover {
+  background-color: #f34cc9;
+  color: #21212b;
+}
+.createBox > .formBox > .buttonDIV > .bttn:disabled {
+  background-color: #21212b;
+  color: #929293;
+  border-color: #929293;
+}
+
+@media (max-width: 700px) {
+  .createBox {
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    margin: 20px 0;
+  }
+  .createBox > .section1 {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .createBox > .formBox {
+    margin: 0;
+  }
+}

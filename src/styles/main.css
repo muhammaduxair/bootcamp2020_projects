@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+/* font-family: 'Yellowtail', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #21212b;
+}
+.mainContainer > .LayoutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LayoutContainer > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LayoutContainer > div:nth-child(1) > a {
+  color: #fff;
+  text-shadow: #fa73d9 0 0 8px;
+  font-family: "Yellowtail", cursive;
+  font-size: 80px;
+  letter-spacing: 5px;
+  margin: 20px 0 0 0;
+  text-decoration: none;
+}
+.LayoutContainer > div:nth-child(1) > p {
+  color: #fff;
+  text-shadow: #fa73d9 0 0 8px;
+  font-family: "Yellowtail", cursive;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  cursor: default;
+}
+.LayoutContainer > div:nth-child(1) > a:hover {
+  text-shadow: #fa73d9 0 0 16px;
+  cursor: pointer;
+}
+.LayoutContainer > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  padding: 30px;
+  width: 100%;
+  margin-top: auto;
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+.footer p > a {
+  color: #fa73d9;
+  text-decoration: none;
+}
+.footer p > a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 540px) {
+  .LayoutContainer > div:nth-child(1) > a {
+    font-size: 48px;
+  }
+  .LayoutContainer > div:nth-child(1) > p {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  .LayoutContainer > div:nth-child(2) {
+    padding: 0 10px;
+  }
+}
